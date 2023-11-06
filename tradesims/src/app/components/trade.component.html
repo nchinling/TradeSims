@@ -1,0 +1,62 @@
+<div class = "container-fluid">
+
+   <div *ngIf="(errorMessage$ | async) as errorMessage" class="error-message">
+      <p>{{errorMessage}}</p>
+  </div>
+
+
+
+<br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tradeModal">
+  Trade
+</button>&nbsp;
+
+
+<!-- Modal -->
+<div class="modal fade" id="tradeModal" tabindex="-1" aria-labelledby="tradeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h4 class="modal-title" id="tradeModalLabel">Trade Form</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="tradeForm" (submit)="processTrade()" class="form-container">
+          <p class="black-text">Stock Name: {{ stockName }}</p>
+          <p class="black-text">Real-Time Price: {{ livePrice }} (to 1 minute) </p>  
+        
+              <div class="form-row">
+                <label for="units" class="black-text">Units:</label>
+                <div class="form-field">
+                  <input type="number" formControlName="units" steps="0.01">
+                </div>
+                <span *ngIf="invalidField('units')" class="invalid-field">
+                  Please provide the number of units.
+                </span>
+              </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="submit" data-bs-dismiss="modal" [disabled]="tradeForm.invalid">Buy</button>
+        <button class="btn btn-danger" (click)="sellTrade()" data-bs-dismiss="modal" [disabled]="tradeForm.invalid">Sell</button>
+    </div>
+  </form>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+<br>
+
+<ng-template #noPortfolioMessage>
+  <p>No trades yet.</p>
+</ng-template>
+
+  
+
+

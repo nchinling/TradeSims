@@ -1,0 +1,125 @@
+
+.rolling-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #ff4500; /* Fiery hot color */
+    border-radius: 10px;
+    animation: colorChange 4s linear infinite alternate;
+  }
+  
+  .rolling-text-container.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .rolling-text {
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: white; 
+  }
+
+  @keyframes colorChange {
+    0%, 100% {
+      background-color: #007bff; /* Fiery hot color */
+    }
+    50% {
+      background-color: #662d91; /* Different color */
+    }
+  }
+
+  /* Add these styles in your component's CSS file or a global CSS file */
+
+/* Style for the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style for table headers */
+th {
+  background-color: orangered;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style for table rows */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for table cells */
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Add color classes for positive and negative values */
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+/* Add styles for arrow icons */
+.arrow-up::before {
+  content: "\25B2";
+}
+
+.arrow-down::before {
+  content: "\25BC";
+}
+
+/* Style for clickable stock item */
+.stock-item {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #007bff; /* Change to your preferred link color */
+}
+
+/* Style for the "no data" message */
+.no-data-message {
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 5px; /* Adjust the height as needed for the thickness of the line */
+  background-color: greenyellow;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  /* @keyframes pulsate {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+   */
+
+   /* @keyframes rotateAndSpin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */

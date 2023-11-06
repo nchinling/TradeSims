@@ -1,0 +1,140 @@
+.chart-canvas {
+    background-color: white;
+}
+
+/* CSS styles for the chart container */
+/* .chart-container {
+    position: relative;
+    width: 100%; 
+
+  } */
+
+  
+.chart-container {
+    position: relative;
+    width: 80vw;
+    height: auto; /* Remove fixed height to allow it to expand as needed */
+    display: flex;
+    flex-direction: column; /* Stack chart and form vertically */
+}
+
+
+  /* CSS styles for the Zoom buttons */
+  .zoom-buttons {
+    position: absolute;
+    top: 10px; /* Adjust the top position */
+    right: 10px; /* Adjust the right position */
+    z-index: 2; /* Ensure the buttons appear over the chart */
+  }
+  
+  /* Style the buttons as needed */
+  .zoom-buttons button {
+    background-color: grey; /* Example button background color */
+    color: #fff; /* Example button text color */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .btn-custom-wclprice {
+    background-color: limegreen;
+    color: white; /* Set the text color to contrast with the background */
+  }
+
+  
+  .btn-custom-wclprice:hover {
+    background-color: #008000; /* Slightly darker green on hover */
+  }
+
+  .btn-custom-adx {
+    background-color: orange;
+    color: white; /* Set the text color to contrast with the background */
+  }
+
+  .btn-custom-adx:hover {
+    background-color: #e68a00; /* Slightly darker color on hover */
+  }
+
+  .btn-custom-avgprice {
+    background-color: red;
+    color: white; /* Set the text color to contrast with the background */
+  }
+  .btn-custom-avgprice:hover {
+    background-color: #cc0000; /* Slightly darker red on hover */
+  }
+  .btn-custom-kama {
+    background-color: blue;
+    color: white; /* Set the text color to contrast with the background */
+  }
+
+  .btn-custom-kama:hover {
+    background-color: rgb(2, 2, 83); /* Slightly darker color on hover */
+  }
+
+  .btn-custom-wma {
+    background-color: purple;
+    color: white; /* Set the text color to contrast with the background */
+  }
+
+  .btn-custom-wma:hover {
+    background-color: #660066; /* Slightly darker color on hover */
+  }
+  .btn-custom-ema {
+    background-color: grey;
+    color: white; /* Set the text color to contrast with the background */
+  }
+
+  .btn-custom-ema:hover {
+    background-color: rgb(84, 83, 83); /* Slightly darker color on hover */
+  }
+
+
+  .btn-custom-add {
+    background-color: pink;
+    color: white; /* Set the text color to contrast with the background */
+  }
+  .btn-custom-add:hover {
+    background-color: rgb(132, 99, 104); /* Slightly darker color on hover */
+  }
+
+  .btn-custom-chaikin {
+    background-color: rgb(46, 198, 236);
+    color: white; /* Set the text color to contrast with the background */
+  }
+  .btn-custom-chaikin:hover {
+    background-color:rgb(22, 89, 106); /* Slightly darker color on hover */
+  }
+
+  .btn-custom-beta {
+    background-color: green;
+    color: white; /* Set the text color to contrast with the background */
+  }
+  .btn-custom-beta:hover {
+    background-color:darkolivegreen /* Slightly darker color on hover */
+  }
+
+  .btn-custom-sigma {
+    background-color:brown;
+    color: white; /* Set the text color to contrast with the background */
+  }
+  .btn-custom-sigma:hover {
+    background-color:rgb(61, 16, 16); /* Slightly darker color on hover */
+  }
+
+  .btn-custom-rsi {
+    background-color:mediumseagreen;
+    color: white; /* Set the text color to contrast with the background */
+  }
+  .btn-custom-rsi:hover {
+    background-color:rgb(25, 71, 46);; /* Slightly darker color on hover */
+  }
+
+  .btn-custom-linearreg {
+    background-color:rgb(214, 30, 104);
+    color: white; /* Set the text color to contrast with the background */
+  }
+  .btn-custom-linearreg:hover {
+    background-color:rgb(58, 9, 29); /* Slightly darker color on hover */
+  }
+
