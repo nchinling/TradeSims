@@ -39,7 +39,7 @@ Users place buy/sell orders by providing the number of units and the buy/sell ac
 Users can search for company data using the search bar.
 
 ### Using TradeSims
-Although the codes are available for your perusal, the app requires the use of environment variables and keys such as from the financial data service provider. Therefore it would be challenging to run the downloaded codes on your localhost. The app can be accessed at at [https://tradesims.up.railway.app/]
+Although the codes are available for your perusal, the app requires the use of environment variables and keys such as from the financial data service provider. Therefore it would be challenging to run the downloaded codes on your localhost. The app can be accessed at at https://tradesims.up.railway.app/
 
 
 ## How to Use TradeSims (hosted at [https://tradesims.up.railway.app/](https://tradesims.up.railway.app/))
