@@ -52,3 +52,10 @@ On login, users will be directed to the dashboard, where they can view their cas
 
 4. **Company Information**: Search for company data using the search bar.
 
+## Video
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=WsDP4cAWfAY" target="_blank">
+ <img src="http://img.youtube.com/vi/WsDP4cAWfAY/mqdefault.jpg" alt="Watch the video" width="600" height="400" border="10" />
+</a>
+
+
+
