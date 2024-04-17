@@ -1,5 +1,9 @@
 # TradeSims - Stock Trading Simulator
 
+![alt text](chart1.webp)
+
+![alt text](chart3.webp)
+
 ## Project Information
 
 TradeSims is a stock trading simulator app that allows users to simulate buying and selling stocks. Users can check their trading profits (or losses) and perform charting. The app includes various charting technical indicators to aid users in identifying buy/sell signals. Other features include a listing of trade history and the current cash-to-stocks ratio.
